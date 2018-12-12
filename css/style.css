@@ -635,6 +635,7 @@ font-size: 16px;
 }
     
 .container {
+    height: 40vh;
     overflow: hidden;
     position: relative;
 }
@@ -646,6 +647,7 @@ padding: 1em;
 }
 
 .h1-on-img-container {
+    margin-top:130px;
     width:500px;
 }
     
@@ -672,6 +674,10 @@ padding: 1em;
     
     #about-link {
     margin: 2em auto;
+    }
+    
+    .recipes {
+        height:60vh;
     }
         
       /*MEDIAQUERRIES FOR SUBPAGES */
@@ -741,11 +747,14 @@ padding: 1em;
         margin: 20px;
     }
     
- /*BIGPHOTO*/   
+ /*BIGPHOTO*/
+    .container {
+        height: 75vh;
+    }
     
 .h1-on-img-container {
     width:600px;
-     margin:100px auto;
+    margin-top:270px;
 }
     
     #h1-fp {
@@ -792,10 +801,10 @@ padding: 1em;
     margin: 3em auto;
     }
     
-    .recipes .recipes-icons-container {
-    padding: 3em;
-}
-    
+    .recipes {
+      height: 65vh;  
+    }
+       
      /*SUBPAGES*/
     
     #bigphoto-om {
