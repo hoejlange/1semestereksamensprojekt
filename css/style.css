@@ -1,0 +1,870 @@
+* {
+    padding: 0;
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Avenir Next", sans-serif;
+    color: #707070;
+    font-size: 20px;
+}
+  
+header {
+    width: 100%;
+    background-color: #ECEAEA;
+}
+
+/*NAVIGATION STYLING SOURCE: https://github.com/itaddiction/responsivenav */
+
+#logo-burger {
+    display: flex;
+    padding-right:0.5em;
+}
+
+#logo {
+    width: 100px;
+    margin: .6em;
+}
+ 
+#main-nav a {
+    text-decoration: none;
+}
+
+#main-nav {
+    display: flex;
+    list-style: none; 
+    padding-right: 1em;
+}
+
+#main-nav a {
+    display: block;
+    margin-left: 1em;
+    font-size: 1.4em;
+    line-height: 1.4em; 
+}
+
+#main-nav a:hover {
+    color: #000;
+}
+
+.active {
+    color: #000;
+}
+
+.hidden {
+    display: none;
+}
+
+li .dropdown-link {
+    position:relative;
+    display:inline;
+}
+
+.dropdown {
+    position: absolute;
+    display:inline-block;
+    height: 0;
+    overflow: hidden;
+    list-style-type: none;
+    background-color: #ECEAEA;
+    z-index: 1;
+}
+
+ul > li:hover .dropdown {
+    height: auto; 
+}
+
+.dropdown  li  a {
+    text-decoration: none;
+    text-align: center;
+padding:10px;
+  width:120px;  
+}
+
+.dropdown a:hover {
+    transition: .5s;
+    color: #CE9F73;
+    cursor: pointer;
+}
+
+/*STYLING FOR FRONTPAGE-MAIN USING GRID*/
+
+body {
+    background-color: #ECEAEA;
+}
+main {
+    background-color: #ECEAEA;
+}
+
+.container {
+    height: 20vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.bigphoto {
+width:100%;
+position: absolute;
+overflow: hidden;
+}
+
+.h1-on-img-container {
+    width:300px;
+    background-color:rgba(255, 255, 255, 0.5);
+    position: relative;
+    margin: 0 auto;
+    top: 60px;
+}
+
+.h1-on-img {
+    color: #404040;
+     padding: 0.5em;
+     text-align: center;
+     font-weight:500
+}
+
+#h1-fp {
+    color: #6B7E5A;
+        font-size: 18px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+    grid-template-rows: auto auto auto auto;
+    padding-top: 1.5em;
+}
+
+h1 {
+color:#FFF;
+text-align: center;
+font-weight: 500;
+margin: 0 auto;
+padding-bottom: 0.5em;   
+}
+
+.ptext-fp {
+    color: #FFF;
+    text-align: center;
+    font-size:20px;
+}
+
+.about-amo {
+    grid-column: 1 / -1;
+    background-color: #cebca9;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+#flour-img {
+    width: 40%;
+    margin:1em auto; 
+}
+
+.article-about-frontpage {
+    width: 90%;
+    height:auto;
+    margin:0 auto;
+}
+
+#about-link {
+    text-decoration: none;
+    text-align: center;
+    background-color: #e7e7e7;
+    margin: 1em auto;
+   padding: 1em;
+    display: block;
+    width:300px;
+    font-weight: 600;
+}
+
+#about-link:hover {
+background-color: #A89270;
+    color:#FFF;
+    transition: .5s;
+}
+
+.recipes {
+    grid-column: 1 / -1;
+    background-image: url(/images/wheat.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    height:45vh; 
+}
+
+.recipes .recipes-text-container {
+    display: flex;
+    flex-flow: column nowrap;
+    padding-bottom: 2em;
+    padding-top: 2em;
+     align-items: center;
+}
+
+.recipes .recipes-icons-container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    padding: 0.5em;
+    max-width:90%;
+    height:auto;
+    margin: auto;
+}
+
+.recipes .recipes-icons-container .icon {
+    max-width:80%;
+    height: auto;
+   
+}
+
+.recipes .recipes-icons-container a .icon:hover {
+    width:100%;
+    height: 100%;
+    transition: .5s;
+}
+
+.sourdough-guide {
+    background-color: #775D3F; 
+}
+
+.sourdough-guide .sourdough-text-container {
+    margin: 1em auto;
+}
+
+.sourdough-guide #dough-img {
+    max-width:80%;
+    height:auto;
+    display: block;
+    padding: .5em;
+    padding-bottom: 1em;
+    margin:0 auto;
+}
+
+#guide-link {
+    text-decoration: none;
+    text-align: center;
+    background-color: #e7e7e7;
+    margin: 1em auto;
+   padding: 1em;
+    display: block;
+    width:150px;
+   
+}
+
+#about-link, #guide-link {
+   font-size: 14px;
+         font-weight: 400;
+    }
+
+#guide-link:hover {
+background-color: #496045;
+    color:#FFF;
+    transition: .5s;
+}
+
+.instagram {
+    background-color: #A89270;
+   max-width: 100%;
+    padding-top:1em;
+}
+
+#insta-feed {
+margin: auto auto;
+}
+
+/* STYLING FOR SUBPAGES USING GRID*/
+
+.intro-text {
+    margin:1em auto;
+    background-color:#A59985;
+}
+
+.intro-text p {
+    text-align: center;
+    padding: 0.2em;
+    color: #FFF;
+    font-size:16px;
+}
+
+.bold {
+    font-weight:600; 
+}
+
+.grid-gallery-subpages {
+    background-color: #E6D6C7;
+    width: 90%;
+    margin: 0 auto;
+    padding: 0.9em 0.4em;
+    display:grid; 
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: auto;
+    grid-gap: 1em;
+}
+
+.gallery-item  {
+    text-decoration: none;
+    background-color: #FFF;
+    max-width:300px;
+    margin: 0 auto;
+}
+
+.gallery-item .recipe-img {
+    width:100%;
+    height: auto;
+   
+}
+
+.recipe-text {
+    padding: .5em;
+    font-size: 16px;
+    text-align: center;
+}
+
+/* STYLING FOR OM.HTML*/
+
+.about-amo-sp-container {
+    display:flex; 
+    flex-direction:column;
+    justify-content: center;
+    background-color: #cebca9;
+}
+
+#flour-img-sp {
+    width: 60%;
+    margin: 0 auto;    
+}
+
+.om-hvedemel-article {
+    margin: 0 auto;
+    padding: 1em;
+    padding-left: 2em; 
+    background-color:#E6D6C7
+}
+
+#list-om {
+    list-style-type: none;
+    padding: 1em;
+}
+
+tr td {
+    padding: 0.3em 1em; 
+    margin: 0 auto;
+    background-color: #cebca9;
+}
+
+/* STYLING FOR SURDEJ.HTML*/
+
+.grid-item-1-sourdough, .grid-item-3-sourdough, .grid-item-5-sourdough {
+    background-color: #E6D6C7;
+}
+.grid-item-1-sourdough {
+display: flex;
+flex-direction: column;
+}
+
+.ingredients {
+    background-color: #A3AF8C;
+    width: 100%;
+    padding: 1em;
+}
+
+.h1-sourdough-ing {
+    font-size:30px;
+}
+
+.h1-sourdough-ing, .h3-sourdough-ing {
+    color: #FFF;
+}
+
+.p-ingredients {
+    font-size: 16px;
+    padding: 1em;
+    color: #FFF;
+}
+
+.opstart-article, .vedligeholdelse-article, .bagning-article {
+    padding: 1em;
+    padding-left:2em;
+}
+
+.h1-sourdough {
+    color: #707070;
+    font-size: 30px;
+}
+
+.h2-sourdough {
+    font-weight: 600;
+    padding: 1em;
+}
+
+.h3-sourdough, .h3-sourdough-ing {
+    font-size: 14px;
+    padding:0.5em;
+}
+
+.list {
+    font-size: 14px;
+}
+
+.grid-item-2-sourdough {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-rows: auto;
+    grid-gap: 0.5em;
+    padding:1em;
+}
+
+.sd-imgtxt-container {
+    width:100%;
+    height: auto;
+    margin: 0 auto;
+    background-color: #FFF;
+    
+}
+
+.sourdough-img {
+    width:100%;
+
+}
+
+.img-title-sd {
+    font-size: 13px;
+    padding:.5em;
+
+}
+
+.sourdough-img2 {
+     width:100%;
+     padding-top: 0.4em;
+}
+
+#credits {
+    font-size: 10px;
+    text-align: center;
+}
+
+/* STYLING FOR FOOTER*/
+
+footer {
+     background-color:#ECEAEA;
+}
+
+footer #footer-text {
+    padding: 20px;
+    text-align: center;
+}
+
+ .amodk {
+    text-decoration: none;
+     font-size: 20px;
+     font-weight: 500
+}
+
+.seeamodk {
+    padding-bottom: 1em;
+}
+
+#address {
+    font-size: 15px;
+}
+
+#footer-h2 {
+    text-align: center;
+    font-weight:500;
+}
+
+.contact-icon-container {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-icons {
+ padding: 1em;
+}
+
+.contact-laptop {
+    display:none;
+}
+footer .sm-icons-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.sm-icons {
+    padding: 1em;
+} 
+
+/*MEDIA QUERY MOBILE */
+
+@media all and (max-width: 599px) {
+
+    /*HEADER NAV*/
+    header {
+        display: block;
+    }
+
+    #logo-burger {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #logo-burger label {
+        display: block;
+        font-size: 2em;
+        cursor: pointer;
+    }
+
+    #toggle:checked + #main-nav {
+        display: block;
+    }
+
+    #main-nav {
+        display: none;
+        height: 60vh;
+    }
+
+    #main-nav li {
+        text-align: center;
+     
+        height: 50px; 
+        
+    }
+
+    #main-nav a {
+        margin: auto;
+    }
+
+    #main-nav li:last-of-type {
+        border-bottom: none;
+    }
+      .dropdown {
+    position:relative;
+    width:100%;
+    height:auto;
+        padding-top:.5em;
+    }
+    
+.dropdown > li  {
+font-size: 16px;
+}
+    
+    /*MEDIAQUERRIES FOR MAIN_GRID*/
+    
+    .grid-container {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding-top: 0;
+    }
+    
+    .ptext-fp{
+    display: none;
+        }
+    
+     #about-link, #guide-link {
+   font-size: 14px;
+         font-weight: 300;
+    }
+    
+    .bold, .hide-mobile {
+        display: none;
+    }
+    
+    .sm-icons {
+    width:80%;
+    height:auto;
+
+}
+    
+}
+
+/*MEDIA QUERY TABLET AND ABOVE*/
+
+@media all and (min-width: 600px) {
+
+    /*HEADER NAV*/
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #logo-burger {
+        margin: 0;
+    }
+
+    #logo {
+        width: 120px;
+        margin-top: .6em;
+    }
+
+    #main-nav {
+        justify-content: space-between;
+        width: 100%;
+        margin: 0;
+    }
+
+    #main-nav a {
+        margin: 0 .5em;
+        
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    label {
+        display: none;
+    }
+
+    /*CARD LAYOUT*/
+    .card {
+        flex: 0 1 31%;
+    }
+    
+    .grid-container {
+    grid-template-rows: 500px auto auto auto;
+    margin:0 auto;
+        padding-top:0;
+}
+    
+.container {
+    height: 40vh;
+    overflow: hidden;
+    position: relative;
+}
+
+h1 {
+font-size: 25px;
+padding: 1em;
+  
+}
+
+.h1-on-img-container {
+    width:300px;
+    margin:100px auto;
+    
+}
+    
+    .h1-on-img {
+        font-weight: 500;
+    }
+    
+    .about-amo {
+    flex-direction: row;        
+    padding: 1em;
+    padding-right: 50px;
+}
+    
+    .article-about-frontpage {
+    margin: auto; 
+    }
+
+    #flour-img {
+    height: 80%;
+    width: auto;
+    margin:auto;
+}
+    
+    #about-link {
+    margin: 2em auto;
+    }
+
+    .recipes {
+    height:65vh;
+}
+    
+      /*MEDIAQUERRIES FOR SUBPAGES */
+    
+    .intro-text {
+    margin:1em auto;
+    background-color:#A59985;
+}
+
+.intro-text p {
+    font-size:20px;
+}
+
+    gallery-item {
+        min-width: 250px;
+    }
+    
+    .grid-container-sourdough {
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+    .grid-item-1-sourdough, grid-item-2-sourdough, grid-item-3-sourdough, grid-item-4-sourdough, grid-item-5-sourdough {
+        padding: 1em;
+    }
+    
+      #bigphoto-om {
+        height:30vh;
+    }
+    
+    .om-hvedemel-article {
+        margin: 1em 3em;
+    }
+    
+    #flour-img-sp {
+        width: 40%;
+    }
+       
+    /*MEDIAQUERRIES FOR FOOTER*/
+    
+    .contact-laptop {
+        display:flex;
+        justify-content: center;
+        flex-direction: column;
+        padding-bottom:1em;
+        
+    }
+    
+    .p-mail-tel {
+        padding: 0 1em;
+        text-align: center;
+    }
+    
+    .contact-icon-container {
+        display:none;
+    }
+    
+}
+
+/*MEDIA QUERY LAPTOP AND ABOVE*/
+
+@media all and (min-width: 1024px) {
+
+    /*HEADER*/
+    header {
+        flex-direction: row;
+    }
+
+    #logo {
+        width: 160px;
+        margin: 20px;
+    }
+    
+ /*BIGPHOTO*/   
+.container {
+    height: 80vh;
+}
+    
+
+.h1-on-img-container {
+    width:600px;
+    margin: 350px auto;
+}
+    
+    #h1-fp {
+    font-size: 25px;
+        }
+    
+/*MAIN*/ 
+    .grid-container {
+    grid-template-rows: auto auto auto auto;
+            grid-gap: 1em;
+        margin: 0 2em;
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+    
+     h1 {
+        font-size: 32px;
+    }
+    
+      ptext-fp {
+       font-size:25px;
+       }
+    
+    .about-amo {
+    flex-direction: row;        
+    padding: 1em;
+    padding-right: 50px;
+}
+
+    .article-about-frontpage {
+        width:650px;
+    }
+    
+    #flour-img {
+    height: 400px;
+    width: auto;
+}
+    
+    .about-text {
+        padding: 1em;
+    }
+    
+    #about-link {
+    margin: 3em auto;
+    }
+    
+    .recipes {
+        height: 80vh;
+    }
+ 
+    .recipes .recipes-icons-container {
+    padding: 3em;
+}
+    
+     /*SUBPAGES*/
+    
+    #bigphoto-om {
+        height:50vh;
+    }
+    
+    .about-amo-sp-container {
+        flex-direction: row;
+    }
+    #flour-img-sp {
+        width: 30%;
+        height:30%;
+        margin: auto;
+    }
+    
+    .om-hvedemel-article {
+        width:50%;
+        margin:1em auto;
+    }
+    
+    .grid-gallery-subpages {
+        margin-bottom: 1em; 
+    }
+    
+    .intro-text p {
+    font-size:22px;
+        width: 85%;
+        margin: 0 auto;
+}
+    
+.grid-container-sourdough {
+        width: 75%;
+        margin: 0 auto;
+    margin-bottom: 2em;
+    }
+    
+ .vedligeholdelse-article, .bagning-article {
+    width: 75%;
+    margin: 0 auto;
+}
+    
+    .grid-item-1-sourdough {
+        flex-direction:row;;
+    }
+      
+    /*MEDIAQUERRIES FOR FOOTER*/
+    
+    footer {
+     background-color:#FFF;
+}
+     
+    .amodk {
+         font-size: 25px; }
+    
+    #footer-h2 {
+        font-weight:600; 
+        padding:0.5em;
+    }
+}

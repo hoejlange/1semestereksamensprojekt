@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0">
+    <title>Amo Hvedemel</title>
+    <meta name="description" content="Find de lækreste opskrifter på både brød, kage og mad, og læs mere om Amo Hvedemel">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/favicon.png" type="image/png" sizes="16x16">
+</head>
+
+<body>
+    <!-- Navigation from https://github.com/itaddiction/responsivenav -->
+    <header>
+
+        <div id="logo-burger">
+            <a href="index.html">
+                <img src="images/logo.grey.png" alt="logo" id="logo">
+            </a>
+            <!-- burger-logo for mobile -->
+            <label for="toggle">&#9776;</label>
+        </div>
+        <nav>
+            <input type="checkbox" id="toggle" class="hidden">
+            <ul id="main-nav">
+                <li><a href="om.html">om</a></li>
+                <li><a href="surdej.html">surdejsguide</a></li>
+                <li class="dropdown-link"><a href="#recipes">opskrifter</a>
+                    <ul class="dropdown">
+                        <li><a href="broed.html">brød</a></li>
+                        <li><a href="kage.html">kage</a></li>
+                        <li><a href="mad.html">mad</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+
+     <div class=container>
+        <img class="bigphoto" src="images/crops.jpg" alt="hvedemark under høst">
+        <div class="h1-on-img-container">
+        <h1 class="h1-on-img" id="h1-fp">Nyt design <br> Samme gode kvalitet</h1>
+        </div>
+        </div>
+
+        <div class="grid-container">
+            <div class="about-amo">
+    
+               <img id="flour-img" src="/images/flour.jpg" alt="melpose">
+              <article class="article-about-frontpage">
+              <h1 >Kvalitetshvedemel fra de svenske marker.</h1>
+               <p class="ptext-fp">AMO hvedemel er danskernes foretrukne. En traditionel hvedemel af høj kvalitet, der giver en smidig og spændstig dej og stort brødvolumen 
+               </p>
+               
+               <a id="about-link" href="om.html">Læs mere om Amo hvedemel</a>
+               
+               
+               </article>
+        
+            </div>
+            <div class="recipes">
+
+                <div class="recipes-text-container">
+                    <h1>Opskrifter</h1>
+                    <p class="ptext-fp">Gå på opdagelse i vores opskriftskatalog og få inspiration til næste bagning.</p>
+                </div>
+
+                <div class="recipes-icons-container">
+                    <a href="broed.html"><img class="icon" src="images/bread.icon.png" alt="brød-ikon"></a>
+                    <a href="kage.html"><img class="icon" src="images/cake.icon.png" alt="kage-ikon"></a>
+                    <a href="mad.html"><img class="icon" src="images/food.icon.png" alt="mad-ikon"></a>
+                </div>
+            </div>
+
+            <div class="sourdough-guide">
+                <div class="sourdough-text-container">
+                    <h1>Kom godt i gang med surdej</h1>
+                    <p class="ptext-fp"> Surdejsbrød er bare lige lidt lækrere, sprødere og saftigere. <br> Lær at mestre surdejen med Amos egen surdejsguide</p>
+                </div>
+                <img id="dough-img" src="images/dough.jpg" alt="dej">
+                <a id="guide-link" href="#"> surdejsguide</a>
+            </div>
+
+            <section class="instagram">
+                <h1>Bag med #amodanmark</h1>
+
+                <div id="insta-feed">
+                    <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+                    <div class="elfsight-app-d1a7c6bb-d45e-47fe-abcf-3d430ca9a859"></div>
+                </div>
+
+            </section>
+        </div>
+
+    </main>
+    
+<!--FOOTER !-->
+    <footer>
+     
+        <div id="footer-text">
+            <p class="seeamodk">
+                Besøg <a class="amodk" href="www.amo.dk" target="_blank">amo.dk</a> og læs mere om andre produkter fra Amo, deltag i konkurrencer og meget andet</p>
+                <div class="sm-icons-container">
+            <a href="https://www.facebook.com/amodanmark/" target="_blank">
+                <img class="sm-icons" src="images/facebook.png" alt="facebook-logo"></a>
+            <a href="https://www.instagram.com/amodanmark/" target="_blank">
+                <img class="sm-icons" src="images/instagram.png" alt="instagram-logo">
+            </a>
+            <a href="https://www.youtube.com/channel/UCpWmm1Vwp1QWhXt4ir-Wz4w" target="_blank">
+                <img class="sm-icons" src="images/youtube.png" alt="youtube-logo">
+            </a>
+        </div>
+            <p id="address">Lantmännen Cerealia A/S <br>
+                Møllegade 12 <br>
+                DK-7100 Vejle <br>
+        </div>
+        <section>
+            <h2 id="footer-h2">Forbrugerhenvendelser</h2>
+
+            <div class="contact-icon-container">
+                <a href="tel:+4580253406">
+                    <img class="contact-icons" src="/images/phone.png" alt="phone-icon">
+                </a>
+                <a href="mailto:forbrugerkontakt.amo@lantmannen.com">
+                    <img class="contact-icons" src="/images/mail.png" alt="mail-icon">
+                </a>
+            </div>
+        </section>
+        <!-- FOR TABLET, LAPTOP AND ABOVE !-->
+        <div class="contact-laptop"> 
+        <p class="p-mail-tel"> tlf: (+45) 80 25 34 06</p>
+        <p class="p-mail-tel">mail:
+        <a href=mailto:forbrugerkontakt.amo@lantmannen.com>forbrugerkontakt.amo@lantmannen.com</a></p> 
+        </div>
+    </footer>
+</body>
+
+</html>
