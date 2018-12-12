@@ -111,7 +111,7 @@ overflow: hidden;
     width:300px;
     background-color:rgba(255, 255, 255, 0.5);
     position: relative;
-    margin: 0 auto;
+    margin: auto;
     top: 2.5em;
 }
 
@@ -647,7 +647,6 @@ padding: 1em;
 }
 
 .h1-on-img-container {
-    margin-top:130px;
     width:500px;
 }
     
@@ -763,8 +762,8 @@ padding: 1em;
     
 /*MAIN*/ 
     .grid-container {
-    grid-template-rows: auto auto auto auto;
-            grid-gap: 1em;
+ grid-template-columns: 50% 50%;
+        grid-gap: 1em;
         margin: 0 2em;
         padding-top: 1em;
         padding-bottom: 1em;
@@ -804,7 +803,7 @@ padding: 1em;
     .recipes {
       height: 65vh;  
     }
-       
+     
      /*SUBPAGES*/
     
     #bigphoto-om {
@@ -857,7 +856,8 @@ padding: 1em;
 }
      
     .amodk {
-         font-size: 25px; }
+         font-size: 25px; 
+    }
     
     #footer-h2 {
         font-weight:600; 
