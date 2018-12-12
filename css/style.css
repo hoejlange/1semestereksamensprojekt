@@ -411,6 +411,7 @@ flex-direction: column;
 
 .list {
     font-size: 14px;
+    line-height: 1.5em;
 }
 
 .grid-item-2-sourdough {
@@ -676,7 +677,7 @@ padding: 1em;
     }
     
     .recipes {
-        height:60vh;
+        height:70vh;
     }
         
       /*MEDIAQUERRIES FOR SUBPAGES */
@@ -801,7 +802,7 @@ padding: 1em;
     }
     
     .recipes {
-      height: 65vh;  
+      height: 80vh;  
     }
      
      /*SUBPAGES*/
@@ -833,6 +834,10 @@ padding: 1em;
         width: 85%;
         margin: 0 auto;
 }
+    
+    .list {
+        line-height: 2em; 
+    }
     
 .grid-container-sourdough {
         width: 75%;
