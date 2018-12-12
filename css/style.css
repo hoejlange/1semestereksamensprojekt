@@ -96,7 +96,7 @@ main {
 }
 
 .container {
-    height: 20vh;
+    height: 30vh;
     overflow: hidden;
     position: relative;
 }
@@ -197,8 +197,8 @@ background-color: #A89270;
 .recipes .recipes-text-container {
     display: flex;
     flex-flow: column nowrap;
-    padding-bottom: 2em;
-    padding-top: 2em;
+    padding-bottom: 1em;
+    padding-top: 1em;
      align-items: center;
 }
 
@@ -527,8 +527,7 @@ footer .sm-icons-container {
 
     #main-nav li {
         text-align: center;
-     
-        height: 50px; 
+         height: 50px; 
         
     }
 
@@ -734,7 +733,7 @@ padding: 1em;
 
 /*MEDIA QUERY LAPTOP AND ABOVE*/
 
-@media all and (min-width: 1024px) {
+@media all and (min-width: 992px) {
 
     /*HEADER*/
     header {
