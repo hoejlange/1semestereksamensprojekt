@@ -171,17 +171,19 @@ padding-bottom: 0.2em;
 #about-link {
     text-decoration: none;
     text-align: center;
-    background-color: #e7e7e7;
+    background-color: #657052;
     margin: 1em auto;
    padding: 0.5em;
     display: block;
     width:220px;
     font-weight: 600;
+    color:#FFF;
 }
 
 #about-link:hover {
-background-color: #A89270;
-    color:#FFF;
+background-color: #e7e7e7;
+    color:#707070;
+    
     transition: .5s;
 }
 
@@ -225,7 +227,7 @@ background-color: #A89270;
 }
 
 .sourdough-guide {
-    background-color: #775D3F; 
+    background-color: #9D7E5A; 
 }
 
 .sourdough-guide .sourdough-text-container {
@@ -233,7 +235,7 @@ background-color: #A89270;
 }
 
 .sourdough-guide #dough-img {
-    max-width:80%;
+    max-width:300px;
     height:auto;
     display: block;
     padding: .5em;
@@ -244,22 +246,23 @@ background-color: #A89270;
 #guide-link {
     text-decoration: none;
     text-align: center;
-    background-color: #e7e7e7;
+    background-color: #657052;
     margin: 1em auto;
    padding: 1em;
     display: block;
     width:150px;
+    color: #FFF;
    
 }
 
 #about-link, #guide-link {
    font-size: 14px;
-         font-weight: 400;
+    font-weight: 400;
     }
 
 #guide-link:hover {
-background-color: #496045;
-    color:#FFF;
+background-color: #e7e7e7;
+    color:#707070;
     transition: .5s;
 }
 
@@ -502,6 +505,7 @@ footer .sm-icons-container {
 .sm-icons {
     padding: 1em;
 } 
+
 
 /*MEDIA QUERY MOBILE */
 
@@ -762,8 +766,9 @@ padding: 1em;
         }
     
 /*MAIN*/ 
+    
     .grid-container {
- grid-template-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
         grid-gap: 1em;
         margin: 0 2em;
         padding-top: 1em;
